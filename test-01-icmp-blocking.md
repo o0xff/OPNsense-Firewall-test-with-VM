@@ -24,7 +24,9 @@ Verify that OPNsense can allow or block basic ICMP (ping) traffic between the LA
 
 ### Rule Configuration
 
-![ICMP block rule configuration](../screenshots/test-01/rule-config-icmp-block.png)
+
+<img width="895" height="483" alt="image" src="https://github.com/user-attachments/assets/f44056f3-f1b0-42ef-bb2b-e1451e5042aa" />
+
 
 ## Test Method
 
