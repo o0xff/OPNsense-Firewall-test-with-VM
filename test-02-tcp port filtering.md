@@ -58,9 +58,10 @@ Configured Firewall Rule:
 | TCP/443 (HTTPS) | Allowed | ✅ `TcpTestSucceeded: True` |
 | ICMP (ping) | Allowed | ✅ `PingSucceeded: True` |
 
-## Verification via Logs
+Results in PowerShell:
 
-Rule matches were checked in **Firewall → Log Files → Live View**, filtered by `interface contains "LAN"`.
+<img width="711" height="390" alt="image" src="https://github.com/user-attachments/assets/5c44fee7-7e16-4334-bc7b-a71bc3ca6b09" />
+
 
 ## Issues Encountered and Resolved
 
