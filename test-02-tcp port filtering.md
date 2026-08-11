@@ -42,7 +42,7 @@ Test-NetConnection -ComputerName 8.8.8.8 -Port 443
 ping 8.8.8.8
 ```
 
-> Note: `nc` (netcat) is not available on Windows by default, so `Test-NetConnection` was used as the native PowerShell equivalent for TCP port testing.
+`Test-NetConnection` was used as the native PowerShell equivalent for TCP port testing.
 
 ## Results
 
