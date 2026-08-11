@@ -154,6 +154,11 @@ Source: 192.168.1.106 → Destination: 10.0.2.15:8080
 Action: rdr | Label: rdr rule
 ```
 
+Real-Time view from Live Logs:
+
+<img width="832" height="457" alt="image" src="https://github.com/user-attachments/assets/4a51cd75-a766-4275-913b-6b52d70f375e" />
+
+
 The `rdr` (redirect) action confirmed the Destination NAT rule was actively matching and translating traffic — the key piece of evidence that the rule was functioning correctly, obtained before the end-to-end test succeeded.
 
 
