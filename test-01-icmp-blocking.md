@@ -45,13 +45,17 @@ ping 8.8.8.8
 
 ### Ping Result (Blocked)
 
-![Ping blocked - 100% packet loss](../screenshots/test-01/ping-result-blocked.png)
+
+<img width="512" height="173" alt="image" src="https://github.com/user-attachments/assets/4ecc859b-8a30-4788-893f-121eddd7f7c3" />
+
 
 ### Firewall Log — Default Deny Behavior
 
 While reviewing the Live View logs, background UDP traffic was also observed being dropped by the interface's **default deny** rule (not the custom ICMP rule itself). This is included as supporting evidence that the firewall actively enforces a deny-by-default posture on unmatched traffic, in addition to the explicit ICMP rule above.
 
-![Live log showing default deny matches](../screenshots/test-01/live-log-default-deny.png)
+
+<img width="717" height="206" alt="image" src="https://github.com/user-attachments/assets/4e48a9da-0e83-492e-89d8-76e6d98be267" />
+
 
 ## Conclusion
 
