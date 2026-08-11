@@ -4,18 +4,6 @@
 
 Configure and validate **Destination NAT (Port Forwarding)** in OPNsense — a mechanism that allows an internal LAN service to be reached from outside the network through the firewall's WAN address.
 
-## Concept
-
-A firewall typically has a single public (WAN) IP address, while every device inside the LAN has its own private IP address. When an external request arrives at the WAN address, the firewall does not automatically know which internal device it belongs to.
-
-Port Forwarding solves this by mapping a specific **port** on the WAN address to a specific **internal IP:port**, similar to how an office building with one street address relies on room numbers to route mail to the correct company inside.
-
-| Concept | Real-world analogy |
-|---|---|
-| Firewall's WAN IP | Building's street address |
-| Port | Room number |
-| Internal server | Specific company inside the building |
-| Destination NAT rule | Reception's routing instructions |
 
 ## Lab Setup
 
