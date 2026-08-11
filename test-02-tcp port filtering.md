@@ -60,7 +60,7 @@ Configured Firewall Rule:
 
 Results in PowerShell:
 
-<img width="711" height="390" alt="image" src="https://github.com/user-attachments/assets/5c44fee7-7e16-4334-bc7b-a71bc3ca6b09" />
+<img width="736" height="396" alt="image" src="https://github.com/user-attachments/assets/6d6da6de-cbab-4bbb-870f-4163e4b9755e" />
 
 
 ## Issues Encountered and Resolved
