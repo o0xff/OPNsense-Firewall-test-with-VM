@@ -99,6 +99,11 @@ Required specifically because the test was performed from a client located *insi
 | Reflection for destination NAT | ✅ enabled |
 | Automatic outbound NAT for Reflection | ✅ enabled |
 
+Firewall Settings:
+
+<img width="416" height="170" alt="image" src="https://github.com/user-attachments/assets/2d4e9ec7-d0a3-42c9-81b9-13000fa25d1d" />
+
+
 ### 5. Windows Firewall rule (on the server VM)
 
 ```powershell
