@@ -84,7 +84,10 @@ Saved, then **Apply Changes**.
 | Log | ✅ enabled |
 | Description | "Test - port forward to internal web server" |
 
-Saved, then **Apply**.
+NAT Rule Configuration:
+
+<img width="596" height="533" alt="image" src="https://github.com/user-attachments/assets/fd0be947-6068-4f11-9e3f-36e85db7b812" />
+
 
 ### 4. NAT Reflection — Firewall → Settings → Advanced
 
