@@ -46,6 +46,11 @@ Invoke-WebRequest -Uri http://localhost:8080
 | Content | `8080` |
 | Description | "Test web server port" |
 
+Alias Configuration:
+
+<img width="897" height="317" alt="image" src="https://github.com/user-attachments/assets/c40aaf9f-6c86-46d0-8a40-58ff992596de" />
+
+
 Saved, then **Apply Changes**.
 
 ### 3. Destination NAT rule — Firewall → NAT → Destination NAT → Add
