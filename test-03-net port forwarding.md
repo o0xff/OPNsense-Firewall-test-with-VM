@@ -86,7 +86,8 @@ Saved, then **Apply Changes**.
 
 NAT Rule Configuration:
 
-<img width="596" height="533" alt="image" src="https://github.com/user-attachments/assets/fd0be947-6068-4f11-9e3f-36e85db7b812" />
+<img width="597" height="535" alt="image" src="https://github.com/user-attachments/assets/e2d67ac9-81e1-4600-a1e3-9fc97b12c3bc" />
+
 
 
 ### 4. NAT Reflection — Firewall → Settings → Advanced
