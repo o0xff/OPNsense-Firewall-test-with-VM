@@ -6,6 +6,9 @@ This project documents the setup and testing of a firewall using OPNsense in a v
 Lab Environment
 
 •Firewall: OPNsense (virtualized)
+
 •Client: Windows VM on the LAN network
+
 •Testing tools: ping, PowerShell Test-NetConnection
+
 •Network: LAN / WAN interfaces configured on OPNsense
