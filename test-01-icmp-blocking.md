@@ -15,7 +15,7 @@ Verify that OPNsense can allow or block basic ICMP (ping) traffic between the LA
 | Field | Value |
 |---|---|
 | Interface | LAN |
-| Action | Block / Pass (toggled for testing) |
+| Action | Block |
 | Direction | In |
 | Protocol | ICMP |
 | ICMP type | Echo Request |
