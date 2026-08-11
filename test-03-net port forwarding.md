@@ -135,49 +135,6 @@ Action: rdr | Label: rdr rule
 
 The `rdr` (redirect) action confirmed the Destination NAT rule was actively matching and translating traffic — the key piece of evidence that the rule was functioning correctly, obtained before the end-to-end test succeeded.
 
-## Issues Encountered and Resolved
-
-### Issue 1: Port field rejected manual entry ("8080")
-
-**Symptom**: typing `8080` into the Destination Port field returned "No results matched".
-
-**Cause**: this field is not free text — it searches a list of predefined services and aliases only.
-
-**Resolution**: created a port alias (`test_port_8080`) under Firewall → Aliases, which then appeared as a selectable option in the NAT form.
-
-**Takeaway**: OPNsense relies heavily on aliases to reuse values (ports, IPs, ranges) across different rule types instead of typing raw values everywhere.
-
-### Issue 2: Destination Port and Redirect Target IP fields mixed up
-
-**Symptom**: an IP address was mistakenly entered into the Destination Port field.
-
-**Cause**: form has many similarly-structured fields, easy to misplace values without pausing to check the underlying logic.
-
-**Resolution**: re-mapped the fields to their actual meaning — Destination Port = "what's being requested from outside," Redirect Target IP = "where it's forwarded internally."
-
-**Takeaway**: before saving a NAT rule, it helps to explicitly restate the "from outside → to inside" mapping rather than filling fields mechanically.
-
-### Issue 3: Loopback test failed (NAT Hairpinning)
-
-**Symptom**: `Invoke-WebRequest http://10.0.2.15:8080`, run from the same VM hosting the server, failed with "Unable to connect to the remote server."
-
-**Cause**: the client and the target server are in the same LAN. The request targets the firewall's own external (WAN) address, expecting it to loop the connection back inside — a scenario known as **NAT Hairpinning / NAT Reflection**, which is disabled in OPNsense by default.
-
-**Resolution**: enabled "Reflection for destination NAT" and "Automatic outbound NAT for Reflection" under Firewall → Settings → Advanced.
-
-**Takeaway**: testing a port-forward from inside the same network it targets is not how it would normally be used in production (a real external client wouldn't hit this issue) — reflection is essentially a lab-testing accommodation.
-
-### Issue 4: Still failing after enabling NAT Reflection
-
-**Symptom**: connection still failed even with reflection enabled.
-
-**Diagnosis**: checked Firewall → Log Files → Live View, filtered by `8080` — found the traffic was reaching the firewall and the NAT rule was matching (`Action: rdr`), proving the OPNsense configuration itself was correct and the failure was occurring further down the path.
-
-**Cause**: the Windows Firewall on the server VM was blocking the inbound connection, since — due to the hairpin path — it appeared to arrive from outside rather than as a purely local connection.
-
-**Resolution**: added an explicit inbound allow rule in Windows Firewall for TCP port 8080.
-
-**Takeaway**: a packet's path can cross multiple independent firewalls (network-level and host-level). Confirming the network firewall is configured correctly doesn't guarantee the full path works — each hop needs to be checked individually, and logs are the fastest way to isolate which hop is failing.
 
 ## Conclusion
 
