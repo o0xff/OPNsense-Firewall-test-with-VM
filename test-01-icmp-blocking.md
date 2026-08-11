@@ -65,4 +65,4 @@ The firewall correctly filters ICMP traffic based on the active rule. This confi
 - Basic Block/Pass actions take effect as expected
 - The lab environment is correctly set up for further, more granular testing
 
-This test served as the foundation for more advanced protocol- and port-specific filtering (see [Test 2](test-02-tcp-port-filtering.md)).
+This test served as the foundation for more advanced protocol- and port-specific filtering 
