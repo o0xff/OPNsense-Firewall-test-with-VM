@@ -27,6 +27,11 @@ Created in **Firewall → Rules → LAN**:
 | Log | Enabled |
 | Description | "Test - block outbound telnet" |
 
+Configured Firewall Rule:
+
+
+<img width="717" height="515" alt="image" src="https://github.com/user-attachments/assets/dfdb365d-9307-4ff8-adea-1990f671d472" />
+
 ## Test Method
 
 From the LAN client VM (Windows), using PowerShell:
@@ -42,10 +47,7 @@ Test-NetConnection -ComputerName 8.8.8.8 -Port 443
 ping 8.8.8.8
 ```
 
-Configured Firewall Rule:
 
-
-<img width="717" height="515" alt="image" src="https://github.com/user-attachments/assets/dfdb365d-9307-4ff8-adea-1990f671d472" />
 
 
 `Test-NetConnection` was used as the native PowerShell equivalent for TCP port testing.
