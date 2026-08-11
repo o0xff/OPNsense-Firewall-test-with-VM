@@ -24,7 +24,7 @@ This project documents the setup and testing of a firewall using **OPNsense** in
 |---|------|-------|--------|
 | 1 | [ICMP Block/Allow Test](tests/test-01-icmp-blocking.md) | Basic allow/deny filtering with `ping` | ✅ Completed |
 | 2 | [TCP Port Filtering Test](tests/test-02-tcp-port-filtering.md) | Granular filtering — block Telnet (TCP/23) while allowing HTTPS (TCP/443) | ✅ Completed |
-| 3 | NAT / Port Forwarding | ✅ Completed |
+| 3 | NAT / Port Forwarding | Destination NAT — exposing an internal service through the firewall's WAN address | ✅ Completed |
 | 4 | VLAN Segmentation (LAN/DMZ) | Planned |
 
 ## Key Concepts Demonstrated
