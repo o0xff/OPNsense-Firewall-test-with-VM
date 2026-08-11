@@ -44,6 +44,7 @@ ping 8.8.8.8
 
 Configured Firewall Rule:
 
+
 <img width="717" height="515" alt="image" src="https://github.com/user-attachments/assets/dfdb365d-9307-4ff8-adea-1990f671d472" />
 
 
