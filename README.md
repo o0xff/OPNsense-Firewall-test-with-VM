@@ -34,7 +34,7 @@ This project documents the setup and testing of a firewall using **OPNsense** in
 - **Rule ordering and specificity** — how the `Quick` flag and rule order affect which rule applies
 - **Firewall logging** — using Live View logs to confirm rule matches
 - **Control testing** — validating that unrelated traffic is unaffected by a new rule
-
+ 
 ## Repository Structure
 
 ```
