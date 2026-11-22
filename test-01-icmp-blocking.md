@@ -9,7 +9,7 @@ Verify that OPNsense can allow or block basic ICMP (ping) traffic between the LA
 - **Target host**: `8.8.8.8` (Google Public DNS)
 - **Traffic type**: ICMP (ping)
 - **Expected behavior**: traffic is allowed or blocked depending on the active firewall rule for ICMP on the LAN interface
-
+ 
 ## Configuration
 
 | Field | Value |
