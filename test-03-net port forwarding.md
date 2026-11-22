@@ -35,7 +35,7 @@ Verified locally:
 Invoke-WebRequest -Uri http://localhost:8080
 # StatusCode: 200
 ```
-
+ 
 ### 2. Port alias — Firewall → Aliases → Add
 
 | Field | Value |
