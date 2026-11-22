@@ -9,7 +9,7 @@ Verify that the firewall can selectively block a specific protocol/port (TCP/23 
 - **Target host**: `8.8.8.8`
 - **Blocked traffic**: TCP port 23 (Telnet) — an insecure protocol that transmits data in plaintext
 - **Control traffic**: TCP port 443 (HTTPS) and ICMP (ping) — expected to remain unaffected
-
+ 
 ## Rule Configuration
 
 Created in **Firewall → Rules → LAN**:
